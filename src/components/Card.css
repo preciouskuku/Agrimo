@@ -1,0 +1,90 @@
+.card-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  width: 280px;
+  padding: 30px 20px 70px; /* extra space for bottom cut */
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.icon-circle {
+  background: #F6EFA6;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.icon-circle img {
+  width: 35px;
+  height: 35px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3a4a3c;
+}
+
+.card hr {
+  margin: 12px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* 👇 Custom Z-shape cut for arrow button */
+.cut-shape {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50% 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-btn {
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background: #3a4a3c;
+  color: white;
+  border-color: #3a4a3c;
+}
